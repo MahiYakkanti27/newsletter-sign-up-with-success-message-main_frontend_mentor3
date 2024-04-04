@@ -1,0 +1,96 @@
+body{
+    background-color: hsl(235, 18%, 26%);
+    height: 80vh;
+    width: 80vw;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.main{
+    margin: 25%;
+    background-color: white;
+    margin: 25%;
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+}
+.one{
+    width: 55%;
+    height: auto;
+    margin: 5% 3%;
+}
+h1{
+    font-weight: 700;
+}
+ul{
+    list-style-type: none;
+}
+li::before{
+    content: url(icon-list.svg);
+    margin-right: 15px;
+    margin-top: 100px; 
+    
+}
+li{
+   margin: 10px 0;
+}
+.email{
+    border-radius: 2px;
+    border: 2px solid black;
+}
+
+@media screen and (max-width: 1200px) {
+    .main {
+        flex-direction: column-reverse;
+    }
+    .one{
+        justify-content: center;
+        width: 80%;
+        height: auto;
+        margin-right: 13%;
+        margin-left: 7%;
+    }
+  }
+ul{
+    padding-inline-start: 0px;
+    margin-bottom: 10%;
+}
+input[type="text"] {
+    width: 90%;
+    padding: 3% 2.5%;
+    margin-top: 2%;
+    border-radius: 4px;
+}
+button[type="button"]{
+    width: 95%;
+    padding: 3.5% 3%;
+    margin-top: 4%;
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    border-radius: 4px;
+}
+img{
+    width: 90%;
+    height: 90%;
+    justify-content: center;
+    margin: 5%;
+}
+span{
+    margin-left: 25%;
+    color: hsl(4, 76%, 47%);
+    font-size: 10px;
+}
+.invalid-email {
+    border: 2px solid red;
+    background-color: rgb(252, 199, 199);
+}
+.but:hover{
+    background-color: hsl(4, 100%, 67%);
+    color: rgb(15, 14, 14);
+}
+
+
+
